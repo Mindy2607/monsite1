@@ -1,0 +1,93 @@
+<body style="background-color: skyblue; font-family:'Georgia'">
+    <nav class="menu" id="menu">
+     <a href="page1.html">Page1</a> |
+     <a href="page2.html">Page2</a> |
+     <a href="Tableaux.html">Tableaux</a> |
+     <a href="formulaire1.html">Formulaire1</a> |
+     <a href="formulaire2.html">Formulaire2</a> |
+     <a href="CV.html">CV</a> |
+</nav>
+<hr>
+    
+     <h1 style="color:red; text-align:center;text-decoration: underline;">Enregistrement des Etudiants</h1>
+        <p> Veuillez remplir le formulaire suivant pour votre inscription:</p>
+
+<form method="post" action="cible_formulaire.php">
+
+    <fieldset style=" padding:15px;">
+        <legend style="text-align:center;">ETAT CIVIL</legend>
+        <div style="display:flex;gap:5px;margin-bottom:10px;">
+
+        <label for="nom">NOM:</label><br />
+        <input type="text" name="nom" id="nom"tabindex="10" /><br />
+
+        <label for="prenom">PRENOM:</label><br />
+        <input type="text" name="prenom" id="prenom" tabindex="20" /><br />
+    </div>
+    <div  style="display:flex;gap:5px;margin-bottom:10px;">
+
+
+        <label for="date de naissance">Date de naissance:</label><br />
+        <input type="text" name="date de naissance" tabindex="30" /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input type="text" name="email" id="email" tabindex="30" /><br />
+    </div>
+    <div  style="display:flex;gap:5px;margin-bottom:10px;">
+
+        <label for="sexe">Sexe:</label><br />
+        <input type="text" name="sexe" tabindex="30" /><br />
+
+        <label for="contact">Contact:</label><br />
+        <input type="text" name="contact" tabindex="30" /><br />
+    </div>
+    <fieldset>
+
+        <legend style="text-align: center;">VOS DIPLOMES</legend>
+    <div style="display:flex;gap:5px; justify-content:center;margin-bottom:10px;">
+        <input type="radio" name="diplomes" value="CEP" id="CEP" tabindex="40" /> <label for="CEP">CEP</label><br />
+        <input type="radio" name="diplomes" value="BEPC" id="BEPC" tabindex="40" /> <label for="BEPC">BEPC</label><br />
+        <input type="radio" name="diplomes" value="BAC" id="BAC" tabindex="40" /> <label for="BAC">BAC</label><br />
+        <input type="radio" name="diplomes" value="BTS" id="BTS" tabindex="40" /> <label for="BTS">BTS</label><br />
+    </div>
+
+    <fieldset>
+    
+
+        <legend style="text-align: center;">VOTRE ADRESSE</legend>
+        <label for="adresse" style="text-align:center;">Adresse:</label>
+        <textarea id="adresse" placeholder="Entrez votre adresse ici..."></textarea>
+
+
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend style="text-align: center;">PAYS</legend>
+    <div style="display:flex;gap:5px; justify-content:center;margin-bottom:10px;">
+        <input type="radio" name="pays" value="Benin" id="Benin" tabindex="40" /> <label for="Benin">Benin</label><br />
+        <input type="radio" name="pays" value="Senegal" id="Senegal" tabindex="40" /> <label for="Senegal">Senegal</label><br />
+        <input type="radio" name="diplomes" value="France" id="France" tabindex="40" /> <label for="France">France</label><br />
+    </div>
+</fieldset>
+
+    <fieldset>
+        <legend style="text-align: center;">LES BOUTONS</legend>
+        <div style="display:flex;gap:5px; justify-content:center;margin-bottom:10px;">
+
+    <p>
+        <input type="submit" /><input type="reset" /><input type="button" value="Quitter" onclick="windows.location.href='accueil.html'">
+    </p>
+</fieldset>
+</fieldset>
+</fieldset>
+</form>
+
+
+            
+        
+
+
+        
